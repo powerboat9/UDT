@@ -1,3 +1,4 @@
-#transmits data
+#transmits data using base64
 
-charList = (string.ascii_lowercase)
+inp = base64.b64encode("Hi")
+charList = list((string.ascii_letters + string.digits + "+/= ").replace("~", "") + "~")
