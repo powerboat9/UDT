@@ -10,6 +10,10 @@
 
 int con = -1;
 
+FILE *getTempFile() {
+    return tmpfile();
+}
+
 void wait(long miliseconds) {
     tv.secs = (int) (miliseconds / 1000);
     tv.usecs = (int) (miliseconds % 1000);
